@@ -1,28 +1,25 @@
-Digital VLSI Projects
+>Digital VLSI Projects
 
-Project Overview
-
-The projects are tailored for Ceremorphic’s 3nm SoC and ThreadArch® architecture needs:
+>Project Overview:
 
 
 
 
-
-Low-Power 4-bit ALU with Clock Gating: Arithmetic unit with power optimization for AI processors.
-
-
-
-Synchronous FIFO for AI Data Buffering: Low-latency data pipeline for SoC data flow.
+>Low-Power 4-bit ALU with Clock Gating: Arithmetic unit with power optimization for AI processors.
 
 
 
-Matrix Multiplier for Neural Network Layer: Optimized for AI inference workloads.
+>Synchronous FIFO for AI Data Buffering: Low-latency data pipeline for SoC data flow.
 
 
 
-Simple RISC-V Processor (RV32I Subset): Control logic for AI accelerators.
+>Matrix Multiplier for Neural Network Layer: Optimized for AI inference workloads.
 
-Project Details
+
+
+>Simple RISC-V Processor (RV32I Subset): Control logic for AI accelerators.
+
+>Project Details
 
 1. Low-Power 4-bit ALU with Clock Gating
 
@@ -38,7 +35,7 @@ Relevance: Supports energy-efficient AI processor design, critical for Ceremorph
 
 
 
-Tools: Verilog, Icarus Verilog, GTKWave.
+Tools: Verilog, Icarus Verilog, GTKWave,vivado
 
 
 
@@ -50,7 +47,7 @@ Files:
 
 
 
-
+```
 
 alu/alu_rtl.v: RTL code.
 
@@ -61,6 +58,7 @@ alu/alu_tb.v: Testbench with 16 test cases.
 
 
 alu/alu_wave.vcd: Waveform output.
+```
 
 2. Synchronous FIFO for AI Data Buffering
 
@@ -76,7 +74,7 @@ Relevance: Optimized for low-latency data flow in Ceremorphic’s SoC architectu
 
 
 
-Tools: Verilog, Vivado, GTKWave.
+Tools: Verilog, Vivado, GTKWave,vivado
 
 
 
@@ -88,7 +86,7 @@ Files:
 
 
 
-
+```
 
 fifo/fifo_rtl.v: RTL code.
 
@@ -99,6 +97,7 @@ fifo/fifo_tb.v: Testbench with write/read/overflow tests.
 
 
 fifo/fifo_wave.vcd: Waveform output.
+```
 
 3. Matrix Multiplier for Neural Network Layer
 
@@ -114,7 +113,7 @@ Relevance: Targets neural network acceleration, aligning with Ceremorphic’s AI
 
 
 
-Tools: Verilog, Icarus Verilog, GTKWave.
+Tools: Verilog, Icarus Verilog, GTKWave,vivado
 
 
 
@@ -125,7 +124,7 @@ Metrics: 10 test vectors passed, ~20% area savings (2 vs. 8 multipliers).
 Files:
 
 
-
+```
 
 
 matrix/matrix_rtl.v: RTL code.
@@ -137,6 +136,7 @@ matrix/matrix_tb.v: Testbench with 1+9 test vectors.
 
 
 matrix/matrix_wave.vcd: Waveform output.
+```
 
 4. Simple RISC-V Processor (RV32I Subset)
 
@@ -152,7 +152,7 @@ Relevance: Suitable for control logic in Ceremorphic’s AI accelerators.
 
 
 
-Tools: Verilog, Icarus Verilog, GTKWave.
+Tools: Verilog, Icarus Verilog, GTKWave,vivado
 
 
 
@@ -165,7 +165,7 @@ Files:
 
 
 
-
+```
 riscv/riscv_simple.v: RTL code.
 
 
@@ -175,3 +175,4 @@ riscv/riscv_tb.v: Testbench with instruction tests.
 
 
 riscv/riscv_wave.vcd: Waveform output.
+```
